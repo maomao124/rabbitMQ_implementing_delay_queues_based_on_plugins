@@ -8,3 +8,13 @@
 2022-04-24 19:07:59.419  INFO 5436 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
 2022-04-24 19:07:59.758  INFO 5436 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
 2022-04-24 19:07:59.776  INFO 5436 --- [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
+2022-04-24 19:08:23.864  INFO 8836 --- [main] elayQueuesBasedOnPluginsApplicationTests : Starting RabbitMqImplementingDelayQueuesBasedOnPluginsApplicationTests using Java 16.0.2 on mao with PID 8836 (started by mao in H:\程序\大三下期\rabbitMQ基于插件实现延迟队列)
+2022-04-24 19:08:23.865 DEBUG 8836 --- [main] elayQueuesBasedOnPluginsApplicationTests : Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-04-24 19:08:23.866  INFO 8836 --- [main] elayQueuesBasedOnPluginsApplicationTests : The following 1 profile is active: "dev"
+2022-04-24 19:08:25.854  INFO 8836 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [127.0.0.1:5672]
+2022-04-24 19:08:25.920  INFO 8836 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#6c6017b9:0/SimpleConnection@153cb763 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 56335]
+2022-04-24 19:08:25.925  INFO 8836 --- [main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (delay_queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2022-04-24 19:08:26.006  INFO 8836 --- [main] elayQueuesBasedOnPluginsApplicationTests : Started RabbitMqImplementingDelayQueuesBasedOnPluginsApplicationTests in 2.551 seconds (JVM running for 3.419)
+2022-04-24 19:08:26.479  INFO 8836 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2022-04-24 19:08:27.002  INFO 8836 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2022-04-24 19:08:27.003  INFO 8836 --- [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped

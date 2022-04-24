@@ -1,0 +1,13 @@
+2022-04-24 19:08:45.351  INFO 2356 --- [main] tingDelayQueuesBasedOnPluginsApplication : Starting RabbitMqImplementingDelayQueuesBasedOnPluginsApplication v0.0.1-SNAPSHOT using Java 16.0.2 on mao with PID 2356 (H:\程序\大三下期\rabbitMQ基于插件实现延迟队列\target\rabbitMQ_implementing_delay_queues_based_on_plugins-0.0.1-SNAPSHOT.jar started by mao in H:\程序\大三下期\rabbitMQ基于插件实现延迟队列\target)
+2022-04-24 19:08:45.355 DEBUG 2356 --- [main] tingDelayQueuesBasedOnPluginsApplication : Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-04-24 19:08:45.356  INFO 2356 --- [main] tingDelayQueuesBasedOnPluginsApplication : The following 1 profile is active: "dev"
+2022-04-24 19:08:46.565  INFO 2356 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-24 19:08:46.580  INFO 2356 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-24 19:08:46.581  INFO 2356 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-24 19:08:46.660  INFO 2356 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-24 19:08:46.661  INFO 2356 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1244 ms
+2022-04-24 19:08:47.345  INFO 2356 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-24 19:08:47.348  INFO 2356 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [127.0.0.1:5672]
+2022-04-24 19:08:47.424  INFO 2356 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#7a791b66:0/SimpleConnection@285f09de [delegate=amqp://admin@127.0.0.1:5672/, localPort= 56351]
+2022-04-24 19:08:47.429  INFO 2356 --- [main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (delay_queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2022-04-24 19:08:47.532  INFO 2356 --- [main] tingDelayQueuesBasedOnPluginsApplication : Started RabbitMqImplementingDelayQueuesBasedOnPluginsApplication in 2.766 seconds (JVM running for 3.198)
