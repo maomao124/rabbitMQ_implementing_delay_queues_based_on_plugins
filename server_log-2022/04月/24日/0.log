@@ -1,0 +1,111 @@
+2022-04-24 18:29:46.830  INFO 15940 --- [main] tingDelayQueuesBasedOnPluginsApplication : Starting RabbitMqImplementingDelayQueuesBasedOnPluginsApplication using Java 16.0.2 on mao with PID 15940 (H:\程序\大三下期\rabbitMQ基于插件实现延迟队列\target\classes started by mao in H:\程序\大三下期\rabbitMQ基于插件实现延迟队列)
+2022-04-24 18:29:46.832 DEBUG 15940 --- [main] tingDelayQueuesBasedOnPluginsApplication : Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-04-24 18:29:46.832  INFO 15940 --- [main] tingDelayQueuesBasedOnPluginsApplication : The following 1 profile is active: "dev"
+2022-04-24 18:29:47.467  INFO 15940 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-24 18:29:47.474  INFO 15940 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-24 18:29:47.475  INFO 15940 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-24 18:29:47.546  INFO 15940 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-24 18:29:47.546  INFO 15940 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 679 ms
+2022-04-24 18:29:47.997  INFO 15940 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-24 18:29:47.998  INFO 15940 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [127.0.0.1:5672]
+2022-04-24 18:29:48.018  INFO 15940 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#63dfada0:0/SimpleConnection@2a02e34b [delegate=amqp://admin@127.0.0.1:5672/, localPort= 53680]
+2022-04-24 18:29:48.022  INFO 15940 --- [main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable or auto-delete Exchange (delay_exchange) durable:false, auto-delete:false. It will be deleted by the broker if it shuts down, and can be redeclared by closing and reopening the connection.
+2022-04-24 18:29:48.023  INFO 15940 --- [main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (delay_queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2022-04-24 18:29:48.060  INFO 15940 --- [main] tingDelayQueuesBasedOnPluginsApplication : Started RabbitMqImplementingDelayQueuesBasedOnPluginsApplication in 1.549 seconds (JVM running for 2.068)
+2022-04-24 18:31:06.904  INFO 15940 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-24 18:31:06.904  INFO 15940 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-24 18:31:06.905  INFO 15940 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-24 18:31:12.393  INFO 15940 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：延迟10秒1
+2022-04-24 18:31:12.411  INFO 15940 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] m.r.consumer.Consumer1                   : 接收到消息：延迟10秒1
+2022-04-24 18:31:18.630  INFO 15940 --- [http-nio-8080-exec-3] m.r.controller.MyController              : 开始发送消息：延迟30秒2
+2022-04-24 18:31:18.632  INFO 15940 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] m.r.consumer.Consumer1                   : 接收到消息：延迟30秒2
+2022-04-24 18:34:14.900  INFO 15940 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2022-04-24 18:34:15.731  INFO 15940 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2022-04-24 18:34:15.750  INFO 15940 --- [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
+2022-04-24 18:34:21.603  INFO 19116 --- [main] tingDelayQueuesBasedOnPluginsApplication : Starting RabbitMqImplementingDelayQueuesBasedOnPluginsApplication using Java 16.0.2 on mao with PID 19116 (H:\程序\大三下期\rabbitMQ基于插件实现延迟队列\target\classes started by mao in H:\程序\大三下期\rabbitMQ基于插件实现延迟队列)
+2022-04-24 18:34:21.605 DEBUG 19116 --- [main] tingDelayQueuesBasedOnPluginsApplication : Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-04-24 18:34:21.606  INFO 19116 --- [main] tingDelayQueuesBasedOnPluginsApplication : The following 1 profile is active: "dev"
+2022-04-24 18:34:22.263  INFO 19116 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-24 18:34:22.270  INFO 19116 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-24 18:34:22.270  INFO 19116 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-24 18:34:22.341  INFO 19116 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-24 18:34:22.341  INFO 19116 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 692 ms
+2022-04-24 18:34:22.797  INFO 19116 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-24 18:34:22.799  INFO 19116 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [127.0.0.1:5672]
+2022-04-24 18:34:22.817  INFO 19116 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#63dfada0:0/SimpleConnection@2a02e34b [delegate=amqp://admin@127.0.0.1:5672/, localPort= 54101]
+2022-04-24 18:34:22.819  INFO 19116 --- [main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable or auto-delete Exchange (delay_exchange) durable:false, auto-delete:false. It will be deleted by the broker if it shuts down, and can be redeclared by closing and reopening the connection.
+2022-04-24 18:34:22.820  INFO 19116 --- [main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (delay_queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2022-04-24 18:34:22.854  INFO 19116 --- [main] tingDelayQueuesBasedOnPluginsApplication : Started RabbitMqImplementingDelayQueuesBasedOnPluginsApplication in 1.58 seconds (JVM running for 2.018)
+2022-04-24 18:34:31.628  INFO 19116 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-24 18:34:31.629  INFO 19116 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-24 18:34:31.629  INFO 19116 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-04-24 18:34:31.653  INFO 19116 --- [http-nio-8080-exec-1] m.r.controller.MyController              : 开始发送消息：延迟30秒：2
+2022-04-24 18:34:31.672  INFO 19116 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] m.r.consumer.Consumer1                   : 接收到消息：延迟30秒：2
+2022-04-24 18:34:36.805  INFO 19116 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：延迟30秒：2
+2022-04-24 18:34:36.809  INFO 19116 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] m.r.consumer.Consumer1                   : 接收到消息：延迟30秒：2
+2022-04-24 18:39:28.725  WARN 19116 --- [pool-1-thread-6] o.s.a.r.listener.BlockingQueueConsumer   : Cancel received for amq.ctag-51qXf0m9r-dHUhLGKz8nPA (delay_queue); Consumer@abad89c: tags=[[amq.ctag-51qXf0m9r-dHUhLGKz8nPA]], channel=Cached Rabbit Channel: AMQChannel(amqp://admin@127.0.0.1:5672/,1), conn: Proxy@494c8f29 Shared Rabbit Connection: SimpleConnection@2a02e34b [delegate=amqp://admin@127.0.0.1:5672/, localPort= 54101], acknowledgeMode=AUTO local queue size=0
+2022-04-24 18:39:28.985  WARN 19116 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.l.SimpleMessageListenerContainer : Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.rabbit.support.ConsumerCancelledException
+2022-04-24 18:39:28.986  INFO 19116 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@abad89c: tags=[[]], channel=Cached Rabbit Channel: AMQChannel(amqp://admin@127.0.0.1:5672/,1), conn: Proxy@494c8f29 Shared Rabbit Connection: SimpleConnection@2a02e34b [delegate=amqp://admin@127.0.0.1:5672/, localPort= 54101], acknowledgeMode=AUTO local queue size=0
+2022-04-24 18:39:28.992  INFO 19116 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable or auto-delete Exchange (delay_exchange) durable:false, auto-delete:false. It will be deleted by the broker if it shuts down, and can be redeclared by closing and reopening the connection.
+2022-04-24 18:39:28.992  INFO 19116 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (delay_queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2022-04-24 18:41:07.608  INFO 19116 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2022-04-24 18:41:08.044  INFO 19116 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2022-04-24 18:41:08.064  INFO 19116 --- [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
+2022-04-24 18:41:11.102  INFO 4244 --- [main] tingDelayQueuesBasedOnPluginsApplication : Starting RabbitMqImplementingDelayQueuesBasedOnPluginsApplication using Java 16.0.2 on mao with PID 4244 (H:\程序\大三下期\rabbitMQ基于插件实现延迟队列\target\classes started by mao in H:\程序\大三下期\rabbitMQ基于插件实现延迟队列)
+2022-04-24 18:41:11.104 DEBUG 4244 --- [main] tingDelayQueuesBasedOnPluginsApplication : Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-04-24 18:41:11.105  INFO 4244 --- [main] tingDelayQueuesBasedOnPluginsApplication : The following 1 profile is active: "dev"
+2022-04-24 18:41:11.741  INFO 4244 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-24 18:41:11.748  INFO 4244 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-24 18:41:11.748  INFO 4244 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-24 18:41:11.820  INFO 4244 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-24 18:41:11.820  INFO 4244 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 678 ms
+2022-04-24 18:41:12.266  INFO 4244 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-24 18:41:12.268  INFO 4244 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [127.0.0.1:5672]
+2022-04-24 18:41:12.286  INFO 4244 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#35a60674:0/SimpleConnection@5b000fe6 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 54591]
+2022-04-24 18:41:12.289  INFO 4244 --- [main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (delay_queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2022-04-24 18:41:12.324  INFO 4244 --- [main] tingDelayQueuesBasedOnPluginsApplication : Started RabbitMqImplementingDelayQueuesBasedOnPluginsApplication in 1.545 seconds (JVM running for 1.979)
+2022-04-24 18:41:48.471  INFO 4244 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-24 18:41:48.472  INFO 4244 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-24 18:41:48.472  INFO 4244 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-04-24 18:41:48.492  INFO 4244 --- [http-nio-8080-exec-1] m.r.controller.MyController              : 开始发送消息：延迟30秒：2
+2022-04-24 18:41:48.513  INFO 4244 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] m.r.consumer.Consumer1                   : 接收到消息：延迟30秒：2
+2022-04-24 18:47:53.404  WARN 4244 --- [AMQP Connection 127.0.0.1:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occurred (Exception message: Connection reset)
+2022-04-24 18:47:54.312  INFO 4244 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@42507640: tags=[[amq.ctag-4bwOv_jX9yXkmUENlgolMQ]], channel=Cached Rabbit Channel: AMQChannel(amqp://admin@127.0.0.1:5672/,1), conn: Proxy@1c57f6b2 Shared Rabbit Connection: SimpleConnection@5b000fe6 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 54591], acknowledgeMode=AUTO local queue size=0
+2022-04-24 18:48:03.079  INFO 4244 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [127.0.0.1:5672]
+2022-04-24 18:48:03.085 ERROR 4244 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Failed to check/redeclare auto-delete queue(s).
+
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:61) ~[spring-rabbit-2.4.4.jar:2.4.4]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:602) ~[spring-rabbit-2.4.4.jar:2.4.4]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:725) ~[spring-rabbit-2.4.4.jar:2.4.4]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createBareChannel(CachingConnectionFactory.java:676) ~[spring-rabbit-2.4.4.jar:2.4.4]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.getCachedChannelProxy(CachingConnectionFactory.java:650) ~[spring-rabbit-2.4.4.jar:2.4.4]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.getChannel(CachingConnectionFactory.java:540) ~[spring-rabbit-2.4.4.jar:2.4.4]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.access$1600(CachingConnectionFactory.java:100) ~[spring-rabbit-2.4.4.jar:2.4.4]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$ChannelCachingConnectionProxy.createChannel(CachingConnectionFactory.java:1418) ~[spring-rabbit-2.4.4.jar:2.4.4]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2178) ~[spring-rabbit-2.4.4.jar:2.4.4]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2145) ~[spring-rabbit-2.4.4.jar:2.4.4]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2125) ~[spring-rabbit-2.4.4.jar:2.4.4]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueInfo(RabbitAdmin.java:463) ~[spring-rabbit-2.4.4.jar:2.4.4]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:447) ~[spring-rabbit-2.4.4.jar:2.4.4]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.attemptDeclarations(AbstractMessageListenerContainer.java:1917) ~[spring-rabbit-2.4.4.jar:2.4.4]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.redeclareElementsIfNecessary(AbstractMessageListenerContainer.java:1898) ~[spring-rabbit-2.4.4.jar:2.4.4]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1374) ~[spring-rabbit-2.4.4.jar:2.4.4]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1220) ~[spring-rabbit-2.4.4.jar:2.4.4]
+	at java.base/java.lang.Thread.run(Thread.java:831) ~[na:na]
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:669) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:645) ~[na:na]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:60) ~[amqp-client-5.13.1.jar:5.13.1]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1223) ~[amqp-client-5.13.1.jar:5.13.1]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1173) ~[amqp-client-5.13.1.jar:5.13.1]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:640) ~[spring-rabbit-2.4.4.jar:2.4.4]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:615) ~[spring-rabbit-2.4.4.jar:2.4.4]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:565) ~[spring-rabbit-2.4.4.jar:2.4.4]
+	... 16 common frames omitted
+
+2022-04-24 18:48:03.085  INFO 4244 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [127.0.0.1:5672]

@@ -1,0 +1,99 @@
+2022-04-24 18:48:03.132  INFO 4244 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2022-04-24 18:48:03.134  INFO 4244 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2022-04-24 18:48:03.150  INFO 4244 --- [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
+2022-04-24 18:58:01.661  INFO 15884 --- [main] tingDelayQueuesBasedOnPluginsApplication : Starting RabbitMqImplementingDelayQueuesBasedOnPluginsApplication using Java 16.0.2 on mao with PID 15884 (H:\程序\大三下期\rabbitMQ基于插件实现延迟队列\target\classes started by mao in H:\程序\大三下期\rabbitMQ基于插件实现延迟队列)
+2022-04-24 18:58:01.663 DEBUG 15884 --- [main] tingDelayQueuesBasedOnPluginsApplication : Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-04-24 18:58:01.664  INFO 15884 --- [main] tingDelayQueuesBasedOnPluginsApplication : The following 1 profile is active: "dev"
+2022-04-24 18:58:02.326  INFO 15884 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-24 18:58:02.333  INFO 15884 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-24 18:58:02.333  INFO 15884 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-24 18:58:02.404  INFO 15884 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-24 18:58:02.405  INFO 15884 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 704 ms
+2022-04-24 18:58:02.908  INFO 15884 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-24 18:58:02.910  INFO 15884 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [127.0.0.1:5672]
+2022-04-24 18:58:02.931  INFO 15884 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#f5b6e78:0/SimpleConnection@2001e48c [delegate=amqp://admin@127.0.0.1:5672/, localPort= 55883]
+2022-04-24 18:58:02.934  INFO 15884 --- [main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (delay_queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2022-04-24 18:58:02.981  INFO 15884 --- [main] tingDelayQueuesBasedOnPluginsApplication : Started RabbitMqImplementingDelayQueuesBasedOnPluginsApplication in 1.653 seconds (JVM running for 2.101)
+2022-04-24 18:58:36.885  INFO 15884 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-24 18:58:36.885  INFO 15884 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-24 18:58:36.886  INFO 15884 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-24 18:58:36.905  INFO 15884 --- [http-nio-8080-exec-1] m.r.controller.MyController              : 开始发送消息：延迟30秒：2
+2022-04-24 18:58:36.923  INFO 15884 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] m.r.consumer.Consumer1                   : 接收到消息：延迟30秒：2
+2022-04-24 18:58:51.935  INFO 15884 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：延迟30秒：2
+2022-04-24 18:58:51.938  INFO 15884 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] m.r.consumer.Consumer1                   : 接收到消息：延迟30秒：2
+2022-04-24 19:01:16.635  INFO 15884 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2022-04-24 19:01:17.273  INFO 15884 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2022-04-24 19:01:17.290  INFO 15884 --- [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
+2022-04-24 19:01:20.331  INFO 8700 --- [main] tingDelayQueuesBasedOnPluginsApplication : Starting RabbitMqImplementingDelayQueuesBasedOnPluginsApplication using Java 16.0.2 on mao with PID 8700 (H:\程序\大三下期\rabbitMQ基于插件实现延迟队列\target\classes started by mao in H:\程序\大三下期\rabbitMQ基于插件实现延迟队列)
+2022-04-24 19:01:20.333 DEBUG 8700 --- [main] tingDelayQueuesBasedOnPluginsApplication : Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-04-24 19:01:20.333  INFO 8700 --- [main] tingDelayQueuesBasedOnPluginsApplication : The following 1 profile is active: "dev"
+2022-04-24 19:01:20.994  INFO 8700 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-24 19:01:21.001  INFO 8700 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-24 19:01:21.001  INFO 8700 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-24 19:01:21.075  INFO 8700 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-24 19:01:21.075  INFO 8700 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 706 ms
+2022-04-24 19:01:21.550  INFO 8700 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-24 19:01:21.552  INFO 8700 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [127.0.0.1:5672]
+2022-04-24 19:01:21.573  INFO 8700 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#640ab13c:0/SimpleConnection@5a515e5d [delegate=amqp://admin@127.0.0.1:5672/, localPort= 56039]
+2022-04-24 19:01:21.576  INFO 8700 --- [main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (delay_queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2022-04-24 19:01:21.611  INFO 8700 --- [main] tingDelayQueuesBasedOnPluginsApplication : Started RabbitMqImplementingDelayQueuesBasedOnPluginsApplication in 1.604 seconds (JVM running for 2.045)
+2022-04-24 19:01:25.453  INFO 8700 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-24 19:01:25.453  INFO 8700 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-24 19:01:25.454  INFO 8700 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-24 19:01:25.477  INFO 8700 --- [http-nio-8080-exec-1] m.r.controller.MyController              : 开始发送消息：延迟30秒：2
+2022-04-24 19:01:25.488  INFO 8700 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] m.r.consumer.Consumer1                   : 接收到消息：延迟30秒：2
+2022-04-24 19:01:43.607  INFO 8700 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2022-04-24 19:01:43.670  INFO 8700 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2022-04-24 19:01:43.687  INFO 8700 --- [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
+2022-04-24 19:01:46.924  INFO 20064 --- [main] tingDelayQueuesBasedOnPluginsApplication : Starting RabbitMqImplementingDelayQueuesBasedOnPluginsApplication using Java 16.0.2 on mao with PID 20064 (H:\程序\大三下期\rabbitMQ基于插件实现延迟队列\target\classes started by mao in H:\程序\大三下期\rabbitMQ基于插件实现延迟队列)
+2022-04-24 19:01:46.926 DEBUG 20064 --- [main] tingDelayQueuesBasedOnPluginsApplication : Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-04-24 19:01:46.926  INFO 20064 --- [main] tingDelayQueuesBasedOnPluginsApplication : The following 1 profile is active: "dev"
+2022-04-24 19:01:47.579  INFO 20064 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-24 19:01:47.586  INFO 20064 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-24 19:01:47.587  INFO 20064 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-24 19:01:47.663  INFO 20064 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-24 19:01:47.663  INFO 20064 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 700 ms
+2022-04-24 19:01:48.114  INFO 20064 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-24 19:01:48.124  INFO 20064 --- [main] tingDelayQueuesBasedOnPluginsApplication : Started RabbitMqImplementingDelayQueuesBasedOnPluginsApplication in 1.55 seconds (JVM running for 2.024)
+2022-04-24 19:01:51.655  INFO 20064 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-24 19:01:51.655  INFO 20064 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-24 19:01:51.656  INFO 20064 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-24 19:01:51.676  INFO 20064 --- [http-nio-8080-exec-1] m.r.controller.MyController              : 开始发送消息：延迟30秒：2
+2022-04-24 19:01:51.684  INFO 20064 --- [http-nio-8080-exec-1] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [127.0.0.1:5672]
+2022-04-24 19:01:51.707  INFO 20064 --- [http-nio-8080-exec-1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#73d60e76:0/SimpleConnection@2cd957c [delegate=amqp://admin@127.0.0.1:5672/, localPort= 56071]
+2022-04-24 19:01:51.710  INFO 20064 --- [http-nio-8080-exec-1] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (delay_queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2022-04-24 19:01:52.202  INFO 20064 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：延迟30秒：2
+2022-04-24 19:01:58.946  INFO 20064 --- [http-nio-8080-exec-3] m.r.controller.MyController              : 开始发送消息：延迟30秒：2
+2022-04-24 19:04:30.574  INFO 7616 --- [main] tingDelayQueuesBasedOnPluginsApplication : Starting RabbitMqImplementingDelayQueuesBasedOnPluginsApplication using Java 16.0.2 on mao with PID 7616 (H:\程序\大三下期\rabbitMQ基于插件实现延迟队列\target\classes started by mao in H:\程序\大三下期\rabbitMQ基于插件实现延迟队列)
+2022-04-24 19:04:30.576 DEBUG 7616 --- [main] tingDelayQueuesBasedOnPluginsApplication : Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-04-24 19:04:30.577  INFO 7616 --- [main] tingDelayQueuesBasedOnPluginsApplication : The following 1 profile is active: "dev"
+2022-04-24 19:04:31.221  INFO 7616 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-24 19:04:31.228  INFO 7616 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-24 19:04:31.228  INFO 7616 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-24 19:04:31.301  INFO 7616 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-24 19:04:31.301  INFO 7616 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 690 ms
+2022-04-24 19:04:31.738  INFO 7616 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-24 19:04:31.747  INFO 7616 --- [main] tingDelayQueuesBasedOnPluginsApplication : Started RabbitMqImplementingDelayQueuesBasedOnPluginsApplication in 1.491 seconds (JVM running for 1.932)
+2022-04-24 19:04:43.671  INFO 7616 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-24 19:04:43.672  INFO 7616 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-24 19:04:43.672  INFO 7616 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-04-24 19:04:43.692  INFO 7616 --- [http-nio-8080-exec-1] m.r.controller.MyController              : 开始发送消息：延迟30秒：2
+2022-04-24 19:04:43.699  INFO 7616 --- [http-nio-8080-exec-1] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [127.0.0.1:5672]
+2022-04-24 19:04:43.719  INFO 7616 --- [http-nio-8080-exec-1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#69923ac3:0/SimpleConnection@2cd957c [delegate=amqp://admin@127.0.0.1:5672/, localPort= 56183]
+2022-04-24 19:04:43.722  INFO 7616 --- [http-nio-8080-exec-1] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (delay_queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2022-04-24 19:04:49.139  INFO 7616 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：延迟30秒：2
+2022-04-24 19:05:55.456  INFO 5436 --- [main] tingDelayQueuesBasedOnPluginsApplication : Starting RabbitMqImplementingDelayQueuesBasedOnPluginsApplication using Java 16.0.2 on mao with PID 5436 (H:\程序\大三下期\rabbitMQ基于插件实现延迟队列\target\classes started by mao in H:\程序\大三下期\rabbitMQ基于插件实现延迟队列)
+2022-04-24 19:05:55.458 DEBUG 5436 --- [main] tingDelayQueuesBasedOnPluginsApplication : Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-04-24 19:05:55.459  INFO 5436 --- [main] tingDelayQueuesBasedOnPluginsApplication : The following 1 profile is active: "dev"
+2022-04-24 19:05:56.118  INFO 5436 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-24 19:05:56.125  INFO 5436 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-24 19:05:56.126  INFO 5436 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-24 19:05:56.201  INFO 5436 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-24 19:05:56.202  INFO 5436 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 701 ms
+2022-04-24 19:05:56.679  INFO 5436 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-24 19:05:56.681  INFO 5436 --- [main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [127.0.0.1:5672]
+2022-04-24 19:05:56.701  INFO 5436 --- [main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#7d78f3d5:0/SimpleConnection@7af443a3 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 56237]
+2022-04-24 19:05:56.704  INFO 5436 --- [main] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (delay_queue) durable:false, auto-delete:false, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2022-04-24 19:05:56.740  INFO 5436 --- [main] tingDelayQueuesBasedOnPluginsApplication : Started RabbitMqImplementingDelayQueuesBasedOnPluginsApplication in 1.614 seconds (JVM running for 2.108)
+2022-04-24 19:05:56.743  INFO 5436 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] m.r.consumer.Consumer1                   : 接收到消息：延迟30秒：2
+2022-04-24 19:05:56.747  INFO 5436 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] m.r.consumer.Consumer1                   : 接收到消息：延迟30秒：2

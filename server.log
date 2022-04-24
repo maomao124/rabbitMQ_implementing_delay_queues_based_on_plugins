@@ -1,0 +1,7 @@
+2022-04-24 19:06:15.047  INFO 5436 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-24 19:06:15.049  INFO 5436 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-24 19:06:15.050  INFO 5436 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-24 19:06:15.069  INFO 5436 --- [http-nio-8080-exec-1] m.r.controller.MyController              : 开始发送消息：延迟30秒：2
+2022-04-24 19:06:20.054  INFO 5436 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：延迟10秒：1
+2022-04-24 19:06:30.068  INFO 5436 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] m.r.consumer.Consumer1                   : 接收到消息：延迟10秒：1
+2022-04-24 19:06:45.089  INFO 5436 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] m.r.consumer.Consumer1                   : 接收到消息：延迟30秒：2
