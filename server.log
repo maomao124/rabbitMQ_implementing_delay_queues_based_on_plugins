@@ -5,3 +5,6 @@
 2022-04-24 19:06:20.054  INFO 5436 --- [http-nio-8080-exec-2] m.r.controller.MyController              : 开始发送消息：延迟10秒：1
 2022-04-24 19:06:30.068  INFO 5436 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] m.r.consumer.Consumer1                   : 接收到消息：延迟10秒：1
 2022-04-24 19:06:45.089  INFO 5436 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] m.r.consumer.Consumer1                   : 接收到消息：延迟30秒：2
+2022-04-24 19:07:59.419  INFO 5436 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2022-04-24 19:07:59.758  INFO 5436 --- [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2022-04-24 19:07:59.776  INFO 5436 --- [SpringApplicationShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
